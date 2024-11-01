@@ -30,7 +30,7 @@ async function generateAndSave() {
   let allPoints = ''; // 儲存所有組的座標資料
 
   for (let i = 1; i <= groupCount; i++) {
-    pts = generateRandomPoints(6); // 每組生成6個隨機點
+    pts = generateRandomPoints(12); // 每組生成6個隨機點
     allPoints += `Group ${i}:\n`; // 記錄組號
     allPoints += pts.map(p => `${p.x.toFixed(2)}, ${p.y.toFixed(2)}`).join('\n') + '\n\n';
 
